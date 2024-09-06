@@ -142,6 +142,12 @@ def plot_empirical_coverage_convergence(
         ymin=0, ymax=1, ls="dashed",
         label=f"target coverage = {target_coverage:.1f}"
     )
+    avg_cov = np.mean(empirical_coverages)
+    ax[0, 0].axvline(
+        x=target_coverage,
+        ymin=0, ymax=1, ls="dashed", color='red',
+        label=f"average effective coverage = {avg_cov:.1f}"
+    )
     
     if only_distribution:
         plt.tight_layout()
