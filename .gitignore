@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.mypy*
+
+# config files
+.env
+.env.*
+.venv
+.vscode
+.idea/
+
+# personal repo
+old
+save
