@@ -37,7 +37,7 @@ def plot_conformity_score_distribution(
     ax[1].axhline(
         y=1-a_cor, xmin=0, xmax=q,
         ls="dashed", color=sns.color_palette("pastel")[2],
-        label=f"corrected target = d(n + 1)(1 - α)e / n"
+        label=r"corrected target = $\lceil(n + 1)(1 - α)\rceil /$ n"
     )
     ax[1].axvline(
         x=q, ymin=0, ymax=1-a,
